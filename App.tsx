@@ -14,6 +14,7 @@ import {
 } from 'react-native';
 import WebView from 'react-native-webview';
 import { Helper } from 'react-native-webview-script-inject/src/Helper';
+import { Inject } from 'react-native-webview-script-inject/src/sampleclass';
 
 import {
   Colors,
@@ -22,7 +23,7 @@ import {
 
 function App(): React.JSX.Element {
   const webViewRef = useRef<WebView>(null);
-  const webviewHelper = new Helper(webViewRef);
+  const webviewHelper = new Helper<Inject>(webViewRef, new Inject());
   const isDarkMode = useColorScheme() === 'dark';
 
   const styles = StyleSheet.create({
