@@ -1,0 +1,17 @@
+{
+  "name": "react-native-webview-script-inject",
+  "version": "0.0.0",
+  "description": "Supporting functions for react-native-webview to easily inject javascript into pages",
+  "main": "src/index",
+  "author": " <> ()",
+  "license": "UNLICENSED",
+  "homepage": "#readme",
+  "create-react-native-library": {
+    "type": "library",
+    "version": "0.41.0"
+  },
+  "dependencies": {
+    "react-native-fs": "^2.20.0",
+    "react-native-webview": "^13.12.1"
+  }
+}
